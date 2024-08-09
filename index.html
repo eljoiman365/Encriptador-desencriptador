@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - descodificador de texto</title>
+    <link rel="stylesheet" href="./style/style.css">    
+    <script src="./app.js" defer></script>
+</head>
+<header class="encabezado"> 
+    <img class="encabezado__imagen" src="./img/Logo@2x.png">
+</header>
+<body>
+    <main class="principal">
+        <div class="versionDesktop">
+        <div class="principal_inputs">
+        <div class="principal__inputs_input1">
+            <textarea class="principal__input" id="inputInicial" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="principal__input_parrafo_imagen">
+            <img class="principal__parrafo1_imagen" src="./img/icons8-error-30.png">
+            <p class="principal__parrafo1">Ingrese solo letras minúsculas y sin acentos</p>
+        </div>
+        </div>
+        <div class="contenedor_input2" id="bloque_input2"> 
+            <img class="imagen_input2" id="imagenInput" src="./img/datos.png">
+            <h3 class="input2_titulo" id="tituloInput2">Ningún mensaje fue encontrado</h3>
+            <p class="input2_párrafo" id="parrafoInput2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+            <textarea class="principal__input2" readonly rows="10" cols="30" id="resultado"></textarea>
+        </div>
+        <div class="pie__botonesED">
+            <button  class="pie__botonesED_encriptar" id="encriptar" onclick="valorCodificado(); ocultar(); borrarTexto()">Encriptar</button>
+            <button class="pie__botonesED_desencriptar" id="desencriptar" onclick="desencriptar(); borrarTexto()">Desencriptar</button>
+            <button class="pie__botonesED_copia" id="copiar" onclick="copiarTexto(); cambiarTexto();">Copiar</button>
+        </div>
+        </div>
+        <div class="versionTablet">
+            <textarea class="versionTablet_input1" id="inputInicialVersionTablet" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="versionTablet_input1_contenedorInput1">
+                <img class="versionTablet_input1_contenedorInput1_img" src="./img/icons8-error-30.png">
+                <p class="versionTablet_input1_contenedorInput1_parrafo">Ingrese solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="versionTablet_botonesED">
+                <button class="versionTablet_botonesED_codificar" id="encriptar" onclick="valorCodificadoTablet();ocultarVersionTablet(); borrarTextoTablet()">Encriptar</button>
+                <button class="versionTablet_botonesED_descodificar" id="desencriptar" onclick="desencriptarVersionTablet(); borrarTextoTablet()">Desencriptar</button>
+            </div>
+            <div class="versionTablet_contenedorInput2" id="bloqueInput2VersionTablet"> 
+                <h3 class="versionTablet_contenedorInput2_titulo" id="tituloInput2">Ningún mensaje fue encontrado</h3>
+                <p class="versionTablet_contenedorInput2_parrafo" id="parrafoInput2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea class="versionTablet_input2" readonly rows="10" cols="30" id="resultadoVersionTablet"></textarea>
+            <div class="versionTabletContenedorInput2_0">
+                <button class="versionTablet_copiar" id="versionTabletCopiar" onclick="copiarTextoTablet();cambiarTextoVersionTablet();">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="pie">
+            <h1 class="pie__contenido_titulo">Desarrollado por:</h1>
+            <div class="pie_contenido__imagenes">
+                <a class="linkedin" href="https://www.linkedin.com/in/yorman-corba-143b13220/"><img src="./img/linkedin.png"></a> 
+                <p class="pie__contenido_nombre">Yorman Estiben Corba Castaño</p>               
+                <a class="github" href="https://github.com/eljoiman365/Prueba"><img src="./img/github.png"></a>
+            </div>
+    </footer>
+</body>
+</html>
