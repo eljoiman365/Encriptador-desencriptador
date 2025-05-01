@@ -15,4 +15,4 @@ Este programa toma el texto ingresado y lo cifra y/o descrifa dependiendo de la 
 ## Hecho por:
 
 🎮 Yorman Corba 🎮 - 
-💼 Linkedin: www.linkedin.com/in/yorman-corba-143b13220
+💼 Linkedin: [www.linkedin.com/in/yorman-corba-143b13220](https://www.linkedin.com/in/yorman-estiben-corba-casta%C3%B1o-143b13220/)
